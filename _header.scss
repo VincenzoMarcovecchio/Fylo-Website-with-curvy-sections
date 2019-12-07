@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+
+.logo-header {
+  margin-left: 5%;
+
+  @include for-phone-only {
+    margin-left: 8%;
+    width: 130px;
+    height: 25px;
+  }
+}
+
+.button-header {
+  margin-right: 8%;
+  font-weight: 500;
+  border-radius: 20px;
+  padding: 7px 30px;
+  font-size: 0.8em;
+  color: $Pink;
+  border: 1px solid $Pink;
+  background: transparent;
+  cursor: pointer;
+
+  &:hover {
+    color: #fff;
+    background-color: $Pink;
+  }
+
+  @include for-phone-only {
+    padding: 5px 20px;
+  }
+}

@@ -1,0 +1,55 @@
+.grow-together {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f5faff;
+
+  @include for-phone-only {
+    flex-direction: column;
+    padding: 50px 5px 50px 5px;
+  }
+
+  .text-grow-together {
+    order: 1;
+    padding: 50px 50px 50px 0px;
+    align-self: center;
+    margin-left: 80px;
+
+    @include for-phone-only {
+      order: 2;
+      text-align: center;
+      margin: auto;
+      padding: 0px 30px;
+    }
+
+    h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      @include for-phone-only {
+        margin-bottom: 10px;
+      }
+    }
+
+    p {
+      font-size: 0.9em;
+      max-width: 550px;
+    }
+  }
+
+  .image-grow-together {
+    width: 550px;
+    height: 400px;
+    background-image: url(/huddle-landing-page-with-curved-sections-master/images/illustration-grow-together.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 80px;
+    order: 2;
+
+    @include for-phone-only {
+      order: 1;
+      width: 90%;
+      height: 200px;
+      margin: 20px auto 50px auto;
+    }
+  }
+}

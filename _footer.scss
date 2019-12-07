@@ -1,0 +1,144 @@
+footer {
+  display: flex;
+  position: relative;
+  background-color: $VeryDarkCyan;
+  height: 450px;
+
+  justify-content: space-between;
+  color: #fff;
+  @include for-phone-only {
+    flex-direction: column;
+    height: 550px;
+  }
+
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+    margin: 80px 0 0 80px;
+    order: 1;
+    @include for-phone-only {
+      order: 2;
+      width: 100%;
+      margin: 0 auto;
+      width: 90%;
+    }
+
+    .footer-logo {
+      margin-bottom: 30px;
+      width: 190px;
+      @include for-phone-only {
+        width: 160px;
+      }
+    }
+    p {
+      font-size: 0.7em;
+      width: 70%;
+      line-height: 2;
+      margin-bottom: 30px;
+      @include for-phone-only {
+        width: 70%;
+      }
+    }
+
+    span {
+      margin-bottom: 10px;
+      img {
+        margin-right: 15px;
+        @include for-phone-only {
+          width: 15px;
+        }
+      }
+      a {
+        text-decoration: none;
+        color: #fff;
+        margin-bottom: 20px;
+        font-size: 0.7em;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: space-between;
+      width: 130px;
+      margin: 40px 0;
+      @include for-phone-only {
+        width: 70px;
+      }
+
+      .fab {
+        font-size: 1.7em;
+        transition: all 150ms ease-in-out;
+
+        &:hover {
+          color: rgb(92, 169, 231);
+        }
+      }
+    }
+  }
+
+  .footer-right {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 80px 50px 0px 0px;
+    order: 2;
+
+    @include for-phone-only {
+      order: 1;
+      width: 90%;
+      margin: 50px auto 0 auto;
+      float: right;
+    }
+
+    h3 {
+      font-size: 1.3em;
+      margin-bottom: 20px;
+      font-weight: 500;
+    }
+
+    p {
+      font-size: 0.7em;
+      line-height: 2;
+      margin-bottom: 30px;
+      width: 70%;
+      @include for-phone-only {
+        width: 70%;
+      }
+    }
+    input {
+      padding: 6px 20px;
+      margin-right: 25px;
+      border-radius: 5px;
+      @include for-phone-only {
+        width: 100%;
+        align-self: right;
+        margin: 0px 0px 10px 0px;
+      }
+    }
+
+    button {
+      padding: 13px 40px;
+      border-radius: 5px;
+      font-size: 0.8em;
+      font-weight: 500;
+      color: #fff;
+      background-color: $Pink;
+      border: none;
+      margin-top: 10px;
+      transition: all 150ms ease-in-out;
+
+      &:hover {
+        background-color: #fff;
+        color: $Pink;
+      }
+
+      @include for-phone-only {
+        float: right;
+      }
+    }
+  }
+}

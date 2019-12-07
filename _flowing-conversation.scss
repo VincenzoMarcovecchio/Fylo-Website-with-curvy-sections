@@ -1,0 +1,62 @@
+.flowing-conversation {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  background-image: url(/huddle-landing-page-with-curved-sections-master/images/bg-section-bottom-desktop-1.svg),
+    url(/huddle-landing-page-with-curved-sections-master/images/bg-section-top-desktop-2.svg);
+  background-position: top, bottom;
+  background-size: contain, contain;
+  background-repeat: no-repeat, no-repeat;
+
+  @include for-phone-only {
+    flex-direction: column;
+    margin: auto;
+    padding: 40% 0 50% 0;
+    background-image: url(/huddle-landing-page-with-curved-sections-master/images/bg-section-bottom-mobile-1.svg),
+      url(/huddle-landing-page-with-curved-sections-master/images/bg-section-top-mobile-2.svg);
+
+    background-position: top, contain;
+    background-size: contain, contain;
+    background-repeat: no-repeat, no-repeat;
+  }
+
+  .image-flowing-conversation {
+    width: 550px;
+    background: url(/huddle-landing-page-with-curved-sections-master/images/illustration-flowing-conversation.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 80px;
+
+    @include for-phone-only {
+      width: 90%;
+      margin: 0 auto 20px auto;
+      height: 200px;
+    }
+  }
+
+  .text-flowing-conversation {
+    padding: 8%;
+    align-self: center;
+
+    @include for-phone-only {
+      margin: 0 auto;
+      text-align: center;
+      padding: 35px;
+    }
+
+    h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      @include for-phone-only {
+        margin-bottom: 10px;
+      }
+    }
+
+    p {
+      font-size: 0.9em;
+      max-width: 450px;
+    }
+  }
+}

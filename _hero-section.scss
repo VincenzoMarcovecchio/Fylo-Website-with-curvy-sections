@@ -1,0 +1,135 @@
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 150px;
+  background-image: url(/huddle-landing-page-with-curved-sections-master/images/bg-section-top-desktop-1.svg);
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+
+  @include for-phone-only {
+    background-image: url(/huddle-landing-page-with-curved-sections-master/images/bg-section-top-mobile-1.svg);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+  .text-hero {
+    padding: 20px;
+    text-align: center;
+    margin: 130px auto;
+
+    @include for-phone-only {
+      margin: 110px auto;
+    }
+
+    h1 {
+      font-size: 2.2em;
+      font-weight: bolder;
+    }
+
+    p {
+      max-width: 550px;
+      margin: 30px auto;
+      font-size: medium;
+      color: #474646;
+    }
+
+    .button-hero {
+      color: #fff;
+      margin: 30px auto;
+      font-weight: 500;
+      background-color: $Pink;
+      padding: 20px 75px;
+      border-radius: 40px;
+      border: 1px solid $Pink;
+      cursor: pointer;
+      outline: 0;
+      transition: all 150ms ease-in-out;
+      box-shadow: 2px 2px 10px -5px rgba(0, 0, 0, 0.75);
+      &:hover {
+        border: 1px solid rgb(253, 120, 186);
+        background-color: transparent;
+        color: $Pink;
+      }
+
+      @include for-phone-only {
+        padding: 14px 40px;
+      }
+    }
+  }
+  .img-mockups {
+    width: 70%;
+    margin: auto;
+    @include for-phone-only {
+      width: 80%;
+    }
+  }
+
+  .cards {
+    display: flex;
+    justify-content: space-around;
+    margin: 120px 0px 100px 0px;
+
+    @include for-phone-only {
+      flex-direction: column;
+      margin: 100px 0 0 0;
+    }
+  }
+
+  .hero-card-1 {
+    display: flex;
+    flex-direction: column;
+    @include for-phone-only {
+      margin-bottom: 80px;
+    }
+
+    img {
+      width: 20%;
+      @include for-phone-only {
+        align-self: center;
+        width: 10%;
+      }
+    }
+
+    h2 {
+      font-size: 3.5em;
+      @include for-phone-only {
+        font-size: 3em;
+        text-align: center;
+      }
+    }
+
+    p {
+      color: #696767;
+      text-align: center;
+      font-size: 1em;
+    }
+  }
+
+  .hero-card-2 {
+    display: flex;
+    flex-direction: column;
+
+    img {
+      width: 20%;
+      @include for-phone-only {
+        align-self: center;
+        width: 10%;
+      }
+    }
+
+    h2 {
+      font-size: 3.5em;
+      @include for-phone-only {
+        font-size: 3em;
+        text-align: center;
+      }
+    }
+
+    p {
+      color: #696767;
+      text-align: center;
+      font-size: 1em;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: calc(10px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  font-family: "Poppins", sans-serif;
+}
+
+//fonts
+$headings: "Poppins", sans-serif;
+
+//colors
+$VeryDarkCyan: hsl(192, 100%, 9%);
+$VeryPaleBlue: hsl(207, 100%, 98%);
+$Pink: hsl(322, 100%, 66%);
+
+//mixin
+@mixin for-phone-only {
+  @media (max-width: 600px) {
+    @content;
+  }
+}

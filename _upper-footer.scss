@@ -1,0 +1,48 @@
+.text-upper-footer {
+  width: 100%;
+  margin: auto;
+  padding: 25% 2%;
+  text-align: center;
+  background-image: url(huddle-landing-page-with-curved-sections-master/images/bg-section-bottom-desktop-2.svg),
+    url(/huddle-landing-page-with-curved-sections-master/images/bg-footer-top-desktop.svg);
+  background-position: top, bottom;
+  background-size: contain, contain;
+  background-repeat: no-repeat, no-repeat;
+
+  @include for-phone-only {
+    background-image: url(huddle-landing-page-with-curved-sections-master/images/bg-section-bottom-mobile-2.svg),
+      url(/huddle-landing-page-with-curved-sections-master/images/bg-footer-top-mobile.svg);
+    background-position: top, bottom;
+    background-size: contain, contain;
+    background-repeat: no-repeat, no-repeat;
+    padding: 45% 2%;
+  }
+
+  h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+    @include for-phone-only {
+      font-size: 1.9em;
+    }
+  }
+
+  button {
+    padding: 18px 80px;
+    border-radius: 40px;
+    border: none;
+    background-color: $Pink;
+    color: #fff;
+    font-size: 0.9em;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px -5px rgba(0, 0, 0, 0.75);
+    &:hover {
+      background-color: transparent;
+      color: $Pink;
+    }
+
+    @include for-phone-only {
+      padding: 15px 50px;
+    }
+  }
+}
