@@ -3,8 +3,8 @@
   justify-content: space-between;
   padding-top: 20%;
   padding-bottom: 20%;
-  background-image: url(/huddle-landing-page-with-curved-sections-master/images/bg-section-bottom-desktop-1.svg),
-    url(/huddle-landing-page-with-curved-sections-master/images/bg-section-top-desktop-2.svg);
+  background-image: url(/images/bg-section-bottom-desktop-1.svg),
+    url(/images/bg-section-top-desktop-2.svg);
   background-position: top, bottom;
   background-size: contain, contain;
   background-repeat: no-repeat, no-repeat;
@@ -13,8 +13,8 @@
     flex-direction: column;
     margin: auto;
     padding: 40% 0 50% 0;
-    background-image: url(/huddle-landing-page-with-curved-sections-master/images/bg-section-bottom-mobile-1.svg),
-      url(/huddle-landing-page-with-curved-sections-master/images/bg-section-top-mobile-2.svg);
+    background-image: url(/images/bg-section-bottom-mobile-1.svg),
+      url(/images/bg-section-top-mobile-2.svg);
 
     background-position: top, contain;
     background-size: contain, contain;
@@ -23,7 +23,7 @@
 
   .image-flowing-conversation {
     width: 550px;
-    background: url(/huddle-landing-page-with-curved-sections-master/images/illustration-flowing-conversation.svg);
+    background: url(/images/illustration-flowing-conversation.svg);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
