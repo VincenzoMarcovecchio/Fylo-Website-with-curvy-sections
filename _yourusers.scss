@@ -1,7 +1,7 @@
 .your-users {
   display: flex;
   position: relative;
-  background-color: #f5faff;
+  background-color: #f6fbff;
   justify-content: space-between;
   padding-top: 2%;
   padding-bottom: 2%;
@@ -23,21 +23,21 @@
     @include for-phone-only {
       order: 1;
       width: 90%;
-      height: 250px;
+      height: 350px;
       margin: 0 auto 20px auto;
     }
   }
 
   .text-your-users {
-    padding: 50px 50px 50px 0px;
     align-self: center;
     order: 1;
-    margin-left: 80px;
+    margin-left: 90px;
+    padding-right: 30px;
     @include for-phone-only {
       order: 2;
-      margin: auto;
+      margin: 20px 0;
       text-align: center;
-      padding: 30px;
+      padding: 0;
     }
 
     h2 {
@@ -51,10 +51,12 @@
 
     p {
       font-size: 0.9em;
-      max-width: 500px;
-
+      max-width: 550px;
+      line-height: 1.4;
       @include for-phone-only {
-        width: 100%;
+        width: 90%;
+        font-size: 1.3em;
+        margin: 20px auto;
       }
     }
   }

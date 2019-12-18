@@ -19,7 +19,7 @@
     margin: 130px auto;
 
     @include for-phone-only {
-      margin: 110px auto;
+      margin: 110px auto 80px auto;
     }
 
     h1 {
@@ -28,18 +28,23 @@
     }
 
     p {
-      max-width: 550px;
-      margin: 30px auto;
-      font-size: medium;
-      color: #474646;
+      max-width: 650px;
+      margin: 35px auto;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.7;
+      color: $VeryDarkCyan;
+      @include for-phone-only {
+        font-size: 1.3rem;
+      }
     }
 
     .button-hero {
       color: #fff;
-      margin: 30px auto;
+      margin: 35px auto;
       font-weight: 500;
       background-color: $Pink;
-      padding: 20px 75px;
+      padding: 20px 85px;
       border-radius: 40px;
       border: 1px solid $Pink;
       cursor: pointer;
@@ -53,7 +58,8 @@
       }
 
       @include for-phone-only {
-        padding: 14px 40px;
+        padding: 12px 45px;
+        font-size: 1.2rem;
       }
     }
   }
@@ -61,7 +67,8 @@
     width: 70%;
     margin: auto;
     @include for-phone-only {
-      width: 80%;
+      width: 87%;
+      height: 320px;
     }
   }
 
@@ -80,29 +87,33 @@
     display: flex;
     flex-direction: column;
     @include for-phone-only {
-      margin-bottom: 80px;
+      margin-bottom: 90px;
     }
 
     img {
       width: 20%;
       @include for-phone-only {
         align-self: center;
-        width: 10%;
+        width: 11%;
       }
     }
 
     h2 {
       font-size: 3.5em;
       @include for-phone-only {
-        font-size: 3em;
+        font-size: 3.2em;
         text-align: center;
       }
     }
 
     p {
-      color: #696767;
+      color: $VeryDarkCyan;
       text-align: center;
       font-size: 1em;
+      @include for-phone-only {
+        font-size: 1.5em;
+        margin-top: 5px;
+      }
     }
   }
 
@@ -114,7 +125,7 @@
       width: 20%;
       @include for-phone-only {
         align-self: center;
-        width: 10%;
+        width: 11%;
       }
     }
 
@@ -127,9 +138,13 @@
     }
 
     p {
-      color: #696767;
+      color: $VeryDarkCyan;
       text-align: center;
       font-size: 1em;
+      @include for-phone-only {
+        font-size: 1.5em;
+        margin-top: 5px;
+      }
     }
   }
 }

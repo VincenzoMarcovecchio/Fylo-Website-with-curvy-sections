@@ -8,7 +8,7 @@ footer {
   color: #fff;
   @include for-phone-only {
     flex-direction: column;
-    height: 550px;
+    height: 750px;
   }
 
   .footer-left {
@@ -31,12 +31,13 @@ footer {
       }
     }
     p {
-      font-size: 0.7em;
+      font-size: 0.8em;
       width: 70%;
-      line-height: 2;
+      line-height: 1.5;
       margin-bottom: 30px;
       @include for-phone-only {
-        width: 70%;
+        width: 80%;
+        font-size: 1.2em;
       }
     }
 
@@ -53,6 +54,9 @@ footer {
         color: #fff;
         margin-bottom: 20px;
         font-size: 0.7em;
+        @include for-phone-only {
+          font-size: 0.9em;
+        }
 
         &:hover {
           text-decoration: underline;
@@ -62,11 +66,11 @@ footer {
 
     .social-icons {
       display: flex;
-      justify-content: space-between;
-      width: 130px;
+      justify-content: space-around;
+      width: 150px;
       margin: 40px 0;
       @include for-phone-only {
-        width: 70px;
+        width: 120px;
       }
 
       .fab {
@@ -84,51 +88,56 @@ footer {
     display: flex;
     flex-direction: column;
     width: 40%;
-    margin: 80px 50px 0px 0px;
+    margin: 80px 60px 0px 0px;
     order: 2;
 
     @include for-phone-only {
       order: 1;
       width: 90%;
-      margin: 50px auto 0 auto;
+      margin: 50px auto 30px auto;
       float: right;
     }
 
-    h3 {
+    .newsletter {
       font-size: 1.3em;
       margin-bottom: 20px;
       font-weight: 500;
+      text-transform: capitalize;
+      @include for-phone-only {
+        font-size: 2.1em;
+      }
     }
 
     p {
       font-size: 0.7em;
-      line-height: 2;
+      line-height: 1.5;
       margin-bottom: 30px;
       width: 70%;
       @include for-phone-only {
-        width: 70%;
+        width: 80%;
+        font-size: 1.2em;
       }
     }
     input {
-      padding: 6px 20px;
-      margin-right: 25px;
+      padding: 5px 5px;
       border-radius: 5px;
       @include for-phone-only {
         width: 100%;
+        padding: 8px 20px;
         align-self: right;
-        margin: 0px 0px 10px 0px;
+        margin: 0px 0px 15px 0px;
       }
     }
 
     button {
-      padding: 13px 40px;
+      padding: 8px 40px;
       border-radius: 5px;
       font-size: 0.8em;
       font-weight: 500;
       color: #fff;
       background-color: $Pink;
       border: none;
-      margin-top: 10px;
+      margin-top: 20px;
       transition: all 150ms ease-in-out;
 
       &:hover {
@@ -138,6 +147,9 @@ footer {
 
       @include for-phone-only {
         float: right;
+        font-size: 1.2em;
+        padding: 10px 40px;
+        margin-top: 10px;
       }
     }
   }
