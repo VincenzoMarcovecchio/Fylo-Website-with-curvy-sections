@@ -65,7 +65,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-bottom: 150px;
-  background-image: url(/images/bg-section-top-desktop-1.svg);
+  background-image: url(./images/bg-section-top-desktop-1.svg);
   background-size: contain;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -73,7 +73,7 @@ body {
 
 @media (max-width: 600px) {
   .hero-section {
-    background-image: url(/images/bg-section-top-mobile-1.svg);
+    background-image: url(./images/bg-section-top-mobile-1.svg);
     background-size: contain;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -344,7 +344,7 @@ body {
 .grow-together .image-grow-together {
   width: 550px;
   height: 400px;
-  background-image: url(/images/illustration-grow-together.svg);
+  background-image: url(./images/illustration-grow-together.svg);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -374,7 +374,7 @@ body {
           justify-content: space-between;
   padding-top: 20%;
   padding-bottom: 20%;
-  background-image: url(/images/bg-section-bottom-desktop-1.svg), url(/images/bg-section-top-desktop-2.svg);
+  background-image: url(./images/bg-section-bottom-desktop-1.svg), url(/images/bg-section-top-desktop-2.svg);
   background-position: top, bottom;
   background-size: contain, contain;
   background-repeat: no-repeat, no-repeat;
@@ -388,7 +388,7 @@ body {
             flex-direction: column;
     margin: auto;
     padding: 40% 0 50% 0;
-    background-image: url(/images/bg-section-bottom-mobile-1.svg), url(/images/bg-section-top-mobile-2.svg);
+    background-image: url(./images/bg-section-bottom-mobile-1.svg), url(/images/bg-section-top-mobile-2.svg);
     background-position: top, contain;
     background-size: contain, contain;
     background-repeat: no-repeat, no-repeat;
@@ -397,7 +397,7 @@ body {
 
 .flowing-conversation .image-flowing-conversation {
   width: 550px;
-  background: url(/images/illustration-flowing-conversation.svg);
+  background: url(./images/illustration-flowing-conversation.svg);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -478,7 +478,7 @@ body {
 .your-users .image-users {
   width: 550px;
   height: 380px;
-  background-image: url(/images/illustration-your-users.svg);
+  background-image: url(./images/illustration-your-users.svg);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -551,7 +551,7 @@ body {
   margin: auto;
   padding: 25% 2%;
   text-align: center;
-  background-image: url(/images/bg-section-bottom-desktop-2.svg), url(/images/bg-footer-top-desktop.svg);
+  background-image: url(./images/bg-section-bottom-desktop-2.svg), url(/images/bg-footer-top-desktop.svg);
   background-position: top, bottom;
   background-size: contain, contain;
   background-repeat: no-repeat, no-repeat;
@@ -559,7 +559,7 @@ body {
 
 @media (max-width: 600px) {
   .text-upper-footer {
-    background-image: url(/images/bg-section-bottom-mobile-2.svg), url(/images/bg-footer-top-mobile.svg);
+    background-image: url(./images/bg-section-bottom-mobile-2.svg), url(/images/bg-footer-top-mobile.svg);
     background-position: top, bottom;
     background-size: contain, contain;
     background-repeat: no-repeat, no-repeat;

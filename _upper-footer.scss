@@ -3,14 +3,14 @@
   margin: auto;
   padding: 25% 2%;
   text-align: center;
-  background-image: url(/images/bg-section-bottom-desktop-2.svg),
+  background-image: url(./images/bg-section-bottom-desktop-2.svg),
     url(/images/bg-footer-top-desktop.svg);
   background-position: top, bottom;
   background-size: contain, contain;
   background-repeat: no-repeat, no-repeat;
 
   @include for-phone-only {
-    background-image: url(/images/bg-section-bottom-mobile-2.svg),
+    background-image: url(./images/bg-section-bottom-mobile-2.svg),
       url(/images/bg-footer-top-mobile.svg);
     background-position: top, bottom;
     background-size: contain, contain;
