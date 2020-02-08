@@ -34,7 +34,7 @@ body {
 @media (max-width: 600px) {
   .logo-header {
     margin-left: 20%;
-    width: 130px;
+    width: 100px;
     height: 25px;
   }
 }
@@ -44,11 +44,13 @@ body {
   font-weight: 500;
   border-radius: 30px;
   padding: 10px 45px;
-  font-size: 0.8em;
+  font-size: 0.9em;
   color: #ff52bf;
   border: 1px solid #ff52bf;
   background: transparent;
   cursor: pointer;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
 }
 
 .button-header:hover {
@@ -380,7 +382,7 @@ body {
           justify-content: space-between;
   padding-top: 20%;
   padding-bottom: 20%;
-  background-image: url(./images/bg-section-bottom-desktop-1.svg), url(/images/bg-section-top-desktop-2.svg);
+  background-image: url(./images/bg-section-bottom-desktop-1.svg), url(./images/bg-section-top-desktop-2.svg);
   background-position: top, bottom;
   background-size: contain, contain;
   background-repeat: no-repeat, no-repeat;
@@ -394,7 +396,7 @@ body {
             flex-direction: column;
     margin: auto;
     padding: 40% 0 50% 0;
-    background-image: url(./images/bg-section-bottom-mobile-1.svg), url(/images/bg-section-top-mobile-2.svg);
+    background-image: url(./images/bg-section-bottom-mobile-1.svg), url(./images/bg-section-top-mobile-2.svg);
     background-position: top, contain;
     background-size: contain, contain;
     background-repeat: no-repeat, no-repeat;
@@ -565,11 +567,11 @@ body {
 
 @media (max-width: 600px) {
   .text-upper-footer {
-    background-image: url(./images/bg-section-bottom-mobile-2.svg), url(/images/bg-footer-top-mobile.svg);
+    background-image: url(./images/bg-section-bottom-mobile-2.svg), url(./images/bg-footer-top-mobile.svg);
     background-position: top, bottom;
     background-size: contain, contain;
     background-repeat: no-repeat, no-repeat;
-    padding: 45% 2%;
+    padding: 45% 5%;
   }
 }
 
@@ -590,6 +592,8 @@ body {
   border: none;
   background-color: #ff52bf;
   color: #fff;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
   font-size: 0.9em;
   font-weight: 500;
   cursor: pointer;
@@ -616,6 +620,7 @@ footer {
   position: relative;
   background-color: #00252e;
   height: 450px;
+  z-index: 2;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -687,6 +692,7 @@ footer .footer-left span {
 }
 
 footer .footer-left span img {
+  width: 15px;
   margin-right: 15px;
 }
 
@@ -705,7 +711,7 @@ footer .footer-left span a {
 
 @media (max-width: 600px) {
   footer .footer-left span a {
-    font-size: 0.9em;
+    font-size: 1.2em;
   }
 }
 
@@ -717,22 +723,30 @@ footer .footer-left .social-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 150px;
   margin: 40px 0;
 }
 
 @media (max-width: 600px) {
   footer .footer-left .social-icons {
-    width: 120px;
+    width: 140px;
   }
 }
 
 footer .footer-left .social-icons .fab {
-  font-size: 1.7em;
+  font-size: 1.5em;
   -webkit-transition: all 150ms ease-in-out;
   transition: all 150ms ease-in-out;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  footer .footer-left .social-icons .fab {
+    font-size: 2.5em;
+  }
 }
 
 footer .footer-left .social-icons .fab:hover {
@@ -793,14 +807,18 @@ footer .footer-right p {
 }
 
 footer .footer-right input {
-  padding: 5px 5px;
+  padding: 5px 10px;
   border-radius: 5px;
+  border: none;
+  outline: none;
+  width: 100%;
+  z-index: 3;
 }
 
 @media (max-width: 600px) {
   footer .footer-right input {
     width: 100%;
-    padding: 8px 20px;
+    padding: 10px 20px;
     -ms-flex-item-align: right;
         -ms-grid-row-align: right;
         align-self: right;
@@ -819,6 +837,7 @@ footer .footer-right button {
   margin-top: 20px;
   -webkit-transition: all 150ms ease-in-out;
   transition: all 150ms ease-in-out;
+  cursor: pointer;
 }
 
 footer .footer-right button:hover {
@@ -833,4 +852,29 @@ footer .footer-right button:hover {
     padding: 10px 40px;
     margin-top: 10px;
   }
+}
+
+footer .footer-right form {
+  position: relative;
+}
+
+footer .footer-right .email-error {
+  position: absolute;
+  width: 50%;
+  height: 100px;
+  background-color: #f75555;
+  top: 0px;
+  left: 0px;
+  bottom: 0;
+  z-index: -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 8px;
 }

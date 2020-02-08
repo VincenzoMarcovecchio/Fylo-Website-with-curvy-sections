@@ -11,11 +11,11 @@
 
   @include for-phone-only {
     background-image: url(./images/bg-section-bottom-mobile-2.svg),
-      url(/images/bg-footer-top-mobile.svg);
+      url(./images/bg-footer-top-mobile.svg);
     background-position: top, bottom;
     background-size: contain, contain;
     background-repeat: no-repeat, no-repeat;
-    padding: 45% 2%;
+    padding: 45% 5%;
   }
 
   h2 {
@@ -32,6 +32,7 @@
     border: none;
     background-color: $Pink;
     color: #fff;
+    transition: all 150ms ease-in-out;
     font-size: 0.9em;
     font-weight: 500;
     cursor: pointer;
