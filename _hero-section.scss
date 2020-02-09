@@ -67,7 +67,8 @@
     width: 70%;
     margin: auto;
     @include for-phone-only {
-      width: 87%;
+      width: 100%;
+      padding: 30px;
       height: 320px;
     }
   }

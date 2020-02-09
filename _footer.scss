@@ -28,7 +28,7 @@ footer {
       margin-bottom: 30px;
       width: 190px;
       @include for-phone-only {
-        width: 160px;
+        width: 190px;
       }
     }
     p {
@@ -167,19 +167,35 @@ footer {
     form {
       position: relative;
     }
+
     .email-error {
-      position: absolute;
-      width: 50%;
-      height: 100px;
+      margin-bottom: 0;
+      margin-top: 4px;
+      width: 100%;
       background-color: rgb(247, 85, 85);
-      top: 0px;
-      left: 0px;
-      bottom: 0;
       z-index: -1;
-      display: flex;
-      justify-content: baseline;
-      align-items: flex-end;
       padding: 8px;
+      border-radius: 10px;
+      border-top-left-radius: unset;
+      display: none;
+
+      @include for-phone-only {
+        position: absolute;
+        width: 50%;
+        height: 70px;
+        border-radius: 10px;
+        border-top-left-radius: 0;
+        background-color: rgb(247, 85, 85);
+        top: 40px;
+        left: 0px;
+        bottom: 0;
+        z-index: -1;
+        display: flex;
+        justify-content: baseline;
+        align-items: flex-end;
+        padding: 8px;
+        display: none;
+      }
     }
   }
 }

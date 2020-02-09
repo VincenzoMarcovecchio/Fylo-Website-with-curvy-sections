@@ -19,7 +19,7 @@ $Pink: hsl(322, 100%, 66%);
 
 //mixin
 @mixin for-phone-only {
-  @media (max-width: 600px) {
+  @media (max-width: 650px) {
     @content;
   }
 }
